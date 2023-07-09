@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JF91.AppMetrics.InfluxDB2.Net7", "JF91.AppMetrics.InfluxDB2.Net7\JF91.AppMetrics.InfluxDB2.Net7.csproj", "{D96F5E87-8007-45C8-B6DE-6070CA855775}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JF91.AppMetricsInfluxDB2", "JF91.AppMetricsInfluxDB2\JF91.AppMetricsInfluxDB2.csproj", "{B5FDE222-10C2-4D89-B4CF-502F49908B60}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D96F5E87-8007-45C8-B6DE-6070CA855775}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D96F5E87-8007-45C8-B6DE-6070CA855775}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D96F5E87-8007-45C8-B6DE-6070CA855775}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D96F5E87-8007-45C8-B6DE-6070CA855775}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B5FDE222-10C2-4D89-B4CF-502F49908B60}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B5FDE222-10C2-4D89-B4CF-502F49908B60}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B5FDE222-10C2-4D89-B4CF-502F49908B60}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B5FDE222-10C2-4D89-B4CF-502F49908B60}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
