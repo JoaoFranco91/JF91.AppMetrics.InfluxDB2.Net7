@@ -1,5 +1,5 @@
 I've created this package so you can easily integrate App.Metrics into you ASP WEB API to send collected metrics to an InfluxDB2 Server.
-The setup is very straighforward, just install the Nuget Package, add the config section to your appsettings.json and add inject the services into your program.cs.
+The setup is very straighforward, just install the Nuget Package, add the config section to your appsettings.json and inject the services into your program.cs.
 Please follow the instructions carefully.
 
 Install Nuget:
