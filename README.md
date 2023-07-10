@@ -4,6 +4,11 @@ The setup is very straightforward, just install the Nuget Package, add the confi
 
 Please follow the instructions carefully.
 
+Install Nuget:
+```
+dotnet add package JF91.AppMetricsInfluxDB2 --version 1.2
+```
+
 #### 1 - Add this section to your ```appsettings.json``` and modify it to your needs:
 
 ```
