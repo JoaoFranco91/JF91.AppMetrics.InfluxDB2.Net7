@@ -11,6 +11,9 @@
         <PackageLicenseUrl>https://opensource.org/license/bsd-3-clause/</PackageLicenseUrl>
         <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
         <PackageTags>appmetrics,metrics,influxdb,influxdb2</PackageTags>
+        <PackageProjectUrl>https://github.com/JoaoFranco91/JF91.AppMetrics.InfluxDB2.Net7</PackageProjectUrl>
+        <Version>1.0.1</Version>
+        <RepositoryUrl>https://github.com/JoaoFranco91/JF91.AppMetrics.InfluxDB2.Net7</RepositoryUrl>
     </PropertyGroup>
 
     <ItemGroup>

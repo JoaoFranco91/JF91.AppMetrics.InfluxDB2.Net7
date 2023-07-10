@@ -745,7 +745,7 @@
           }
         }
       },
-      "JF91.AppMetricsInfluxDB2/1.0.0": {
+      "JF91.AppMetricsInfluxDB2/1.0.1": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v7.0",
         "dependencies": {
@@ -1825,7 +1825,7 @@
         "version.txt"
       ]
     },
-    "JF91.AppMetricsInfluxDB2/1.0.0": {
+    "JF91.AppMetricsInfluxDB2/1.0.1": {
       "type": "project",
       "path": "../JF91.AppMetricsInfluxDB2/JF91.AppMetricsInfluxDB2.csproj",
       "msbuildProject": "../JF91.AppMetricsInfluxDB2/JF91.AppMetricsInfluxDB2.csproj"
@@ -1837,7 +1837,7 @@
       "App.Metrics.AspNetCore.All >= 4.3.0",
       "App.Metrics.Formatters.InfluxDB >= 4.3.0",
       "App.Metrics.Reporting.InfluxDB >= 4.3.0",
-      "JF91.AppMetricsInfluxDB2 >= 1.0.0",
+      "JF91.AppMetricsInfluxDB2 >= 1.0.1",
       "Microsoft.AspNetCore.OpenApi >= 7.0.3",
       "Swashbuckle.AspNetCore >= 6.4.0"
     ]

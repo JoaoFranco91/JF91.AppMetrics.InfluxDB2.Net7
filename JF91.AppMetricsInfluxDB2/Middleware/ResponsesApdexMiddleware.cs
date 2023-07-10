@@ -1,4 +1,6 @@
-﻿namespace JF91.AppMetricsInfluxDB2.Middleware;
+﻿using JF91.AppMetricsInfluxDB2.Extensions;
+
+namespace JF91.AppMetricsInfluxDB2.Middleware;
 
 using App.Metrics;
 using App.Metrics.Apdex;
@@ -38,14 +40,14 @@ public class ResponsesApdexMiddleware
                 {
                     context.Request.Method,
                     context.Request.Path.Value,
-                    "myself"
+                    context.User.GetEmail() ?? context.User.GetName() ?? context.User.GetUsername() ?? "Anonymous"
                 }
             );
             
             var apdex = new ApdexOptions
             {
                 Name = "apdex",
-                Context = "myApi",
+                Context = Environment.GetEnvironmentVariable("APPLICATION_NAME"),
                 ApdexTSeconds = 0.5, // Adjust based on your SLA
                 Tags = tags
             };

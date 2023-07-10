@@ -1,4 +1,6 @@
-﻿namespace JF91.AppMetricsInfluxDB2.Middleware;
+﻿using JF91.AppMetricsInfluxDB2.Extensions;
+
+namespace JF91.AppMetricsInfluxDB2.Middleware;
 
 using App.Metrics;
 using App.Metrics.Timer;
@@ -38,14 +40,14 @@ public class RequestsDurationMiddleware
                 {
                     context.Request.Method,
                     context.Request.Path.Value,
-                    "myself"
+                    context.User.GetEmail() ?? context.User.GetName() ?? context.User.GetUsername() ?? "Anonymous"
                 }
             );
             
             var requestTimer = new TimerOptions
             {
                 Name = "http_requests_duration",
-                Context = "myApi",
+                Context = Environment.GetEnvironmentVariable("APPLICATION_NAME"),
                 MeasurementUnit = Unit.Requests,
                 DurationUnit = TimeUnit.Milliseconds,
                 RateUnit = TimeUnit.Milliseconds,

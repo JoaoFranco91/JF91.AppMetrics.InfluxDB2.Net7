@@ -1,5 +1,6 @@
 ﻿using System.Net;
 using System.Text.Json;
+using JF91.AppMetricsInfluxDB2.Extensions;
 
 namespace JF91.AppMetricsInfluxDB2.Middleware;
 
@@ -43,7 +44,7 @@ public class RequestsCounterMiddleware
                 {
                     context.Request.Method,
                     context.Request.Path.Value,
-                    "myself"
+                    context.User.GetEmail() ?? context.User.GetName() ?? context.User.GetUsername() ?? "Anonymous"
                 }
             );
 
@@ -52,7 +53,7 @@ public class RequestsCounterMiddleware
                 new CounterOptions
                 {
                     Name = "http_requests_count",
-                    Context = "myApi",
+                    Context = Environment.GetEnvironmentVariable("APPLICATION_NAME"),
                     MeasurementUnit = Unit.Calls,
                     Tags = tags
                 }

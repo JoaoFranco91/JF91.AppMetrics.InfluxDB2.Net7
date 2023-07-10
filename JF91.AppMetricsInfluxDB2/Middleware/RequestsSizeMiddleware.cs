@@ -1,4 +1,6 @@
-﻿namespace JF91.AppMetricsInfluxDB2.Middleware;
+﻿using JF91.AppMetricsInfluxDB2.Extensions;
+
+namespace JF91.AppMetricsInfluxDB2.Middleware;
 
 using App.Metrics;
 using App.Metrics.Histogram;
@@ -44,14 +46,14 @@ public class RequestsSizeMiddleware
                         {
                             context.Request.Method,
                             context.Request.Path.Value,
-                            "myself"
+                            context.User.GetEmail() ?? context.User.GetName() ?? context.User.GetUsername() ?? "Anonymous"
                         }
                     );
 
                     var postAndPutRequestSize = new HistogramOptions
                     {
                         Name = "http_requests_size",
-                        Context = "myApi",
+                        Context = Environment.GetEnvironmentVariable("APPLICATION_NAME"),
                         MeasurementUnit = Unit.Bytes,
                         Tags = tags
                     };

@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "MyeUVNCJfqAM4wyzu5Xo56NHmLVvlRicAHErN8Lh1JXHjbVP7LTuUepanfL0Ul0RP2LEFs7mODZDI9hhD2EKaw==",
+  "dgSpecHash": "LNXLAXbrBiTRt5Es8a6O5kqtZVp8NYMCOPXlYb4SI1X2FEumAidTK2vGLullPCdU8L3scNysoUGs6MrAGBGUNA==",
   "success": true,
   "projectFilePath": "C:\\Users\\Joao\\Documents\\Projects\\JF91\\JF91.AppMetrics.InfluxDB2.Net7\\JF91.AppMetricsInfluxDB2\\JF91.AppMetricsInfluxDB2.csproj",
   "expectedPackageFiles": [

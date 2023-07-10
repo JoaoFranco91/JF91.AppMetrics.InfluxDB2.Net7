@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "xZw4sEqxP7kbYUQgzT+fcqPy8mb65JxbURJJ49HQj1XtUgHUQbIc9uly7MYP0kUyYQB4EY1ZcxDFcoocUuz3AQ==",
+  "dgSpecHash": "q9gPX4q1OQ0tggHTAJekQY93wk1o+6ON9fYW2Ae65mIkzFCJGTdc9SZkc5WpVpXrbAt3TAnk5KMOTFcOb7s8Kw==",
   "success": true,
   "projectFilePath": "C:\\Users\\Joao\\Documents\\Projects\\JF91\\JF91.AppMetrics.InfluxDB2.Net7\\JF91.AppMetrics.InfluxDB2.Net7\\JF91.AppMetrics.InfluxDB2.Net7.csproj",
   "expectedPackageFiles": [
@@ -48,7 +48,8 @@
     "C:\\Users\\Joao\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\6.4.0\\swashbuckle.aspnetcore.swagger.6.4.0.nupkg.sha512",
     "C:\\Users\\Joao\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\6.4.0\\swashbuckle.aspnetcore.swaggergen.6.4.0.nupkg.sha512",
     "C:\\Users\\Joao\\.nuget\\packages\\swashbuckle.aspnetcore.swaggerui\\6.4.0\\swashbuckle.aspnetcore.swaggerui.6.4.0.nupkg.sha512",
-    "C:\\Users\\Joao\\.nuget\\packages\\system.text.json\\4.7.2\\system.text.json.4.7.2.nupkg.sha512"
+    "C:\\Users\\Joao\\.nuget\\packages\\system.text.json\\4.7.2\\system.text.json.4.7.2.nupkg.sha512",
+    "C:\\Users\\Joao\\.nuget\\packages\\jf91.appmetricsinfluxdb2\\1.0.1\\jf91.appmetricsinfluxdb2.1.0.1.nupkg.sha512"
   ],
   "logs": []
 }

@@ -1,4 +1,6 @@
-﻿namespace JF91.AppMetricsInfluxDB2.Middleware;
+﻿using JF91.AppMetricsInfluxDB2.Extensions;
+
+namespace JF91.AppMetricsInfluxDB2.Middleware;
 
 using System.Net;
 using App.Metrics;
@@ -45,7 +47,7 @@ public class HttpStatusCodesCounterMiddleware
                 {
                     context.Request.Method,
                     context.Request.Path.Value,
-                    "myself",
+                    context.User.GetEmail() ?? context.User.GetName() ?? context.User.GetUsername() ?? "Anonymous",
                     Enum.GetName(typeof(HttpStatusCode), context.Response.StatusCode),
                     context.Response.StatusCode.ToString()
                 }
@@ -56,7 +58,7 @@ public class HttpStatusCodesCounterMiddleware
                 new CounterOptions
                 {
                     Name = "http_status_codes",
-                    Context = "myApi",
+                    Context = Environment.GetEnvironmentVariable("APPLICATION_NAME"),
                     MeasurementUnit = Unit.Requests,
                     Tags = tags
                 }
@@ -78,7 +80,7 @@ public class HttpStatusCodesCounterMiddleware
                 {
                     context.Request.Method,
                     context.Request.Path.Value,
-                    "myself",
+                    context.User.GetEmail() ?? context.User.GetName() ?? context.User.GetUsername() ?? "Anonymous",
                     HttpStatusCode.InternalServerError.ToString(),
                     ((int)HttpStatusCode.InternalServerError).ToString()
                 }
@@ -89,7 +91,7 @@ public class HttpStatusCodesCounterMiddleware
                 new CounterOptions
                 {
                     Name = "http_status_codes",
-                    Context = "myApi",
+                    Context = Environment.GetEnvironmentVariable("APPLICATION_NAME"),
                     MeasurementUnit = Unit.Errors,
                     Tags = tags
                 }

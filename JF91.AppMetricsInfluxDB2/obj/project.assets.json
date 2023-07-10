@@ -1377,7 +1377,7 @@
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
-    "version": "1.0.0",
+    "version": "1.0.1",
     "restore": {
       "projectUniqueName": "C:\\Users\\Joao\\Documents\\Projects\\JF91\\JF91.AppMetrics.InfluxDB2.Net7\\JF91.AppMetricsInfluxDB2\\JF91.AppMetricsInfluxDB2.csproj",
       "projectName": "JF91.AppMetricsInfluxDB2",
