@@ -40,17 +40,22 @@ Please follow the instructions carefully.
 }
 ```
 
+<br>
 
 #### 2 - Add this Environment Variable to your ```launchSettings.json```:
 ```
 "APPLICATION_NAME": "MyKickassApi"
 ```
 
+<br>
+
 #### 3 - Add this before ```builder.Build()```:
 ```
 builder.Services.AddMetricsServices();
 builder.WebHost.AddInfluxDb2AppMetrics(builder.Configuration);
 ```
+
+<br>
 
 #### 4 - Add this after ```builder.Build()```:
 ```
@@ -62,6 +67,8 @@ app.UseMetricsAllMiddleware();
 app.UseMetricsAllEndpoints();
 ```
 
+<br>
+
 #### 5 - Add this before ```app.Run()```:
 ```
 app.UseHttpStatusCodesCounterMiddleware();
@@ -69,7 +76,8 @@ app.UseHttpStatusCodesCounterMiddleware();
 
 ---
 
-#### How to add a new metrics middleware:
+
+### How to add a new metrics middleware:
 
 1 - Create an interceptor middleware;
 
@@ -117,6 +125,8 @@ public class MyNewMetricMiddleware
 }
 ```
 
+<br>
+
 3 - Add middleware to app pipeline:
 ```
 builder.UseMiddleware<MyNewMetricMiddleware>();
@@ -124,7 +134,7 @@ builder.UseMiddleware<MyNewMetricMiddleware>();
 
 ---
 
-#### How to add a new metrics in controller:
+### How to add a new metrics in controller:
 1 - Inject ```IMetrics``` into controller:
 
 ```
@@ -134,6 +144,8 @@ public WeatherForecastController(ILogger<WeatherForecastController> logger, IMet
     _metrics = metrics;
 }
 ```
+
+<br>
 
 2 - Use ```IMetrics```:
 ```
