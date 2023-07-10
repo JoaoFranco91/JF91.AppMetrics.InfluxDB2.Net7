@@ -6,7 +6,7 @@ Please follow the instructions carefully.
 
 Install Nuget:
 ```
-dotnet add package JF91.AppMetricsInfluxDB2 --version 1.2
+dotnet add package JF91.AppMetricsInfluxDB2 --version 1.2.0
 ```
 
 #### 1 - Add this section to your ```appsettings.json``` and modify it to your needs:
